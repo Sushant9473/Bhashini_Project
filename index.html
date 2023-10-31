@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Translation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="translation-form">
+      <div class="column">
+        <div class="row">
+          <select class="item1" id="source-language">
+            <!-- Add options for each language here -->
+            <option value="none" selected disabled hidden>
+              Select Source Language
+            </option>
+            <option value="english">English</option>
+            <option value="spanish">Spanish</option>
+            <option value="chinese">Chinese</option>
+          </select>
+          <textarea
+            class="item2"
+            id="source-content"
+            placeholder="Write here..."
+          ></textarea>
+        </div>
+        <div class="row">
+          <select class="item1" id="target-language">
+            <!-- Add options for each language here -->
+            <option value="none" selected disabled hidden>
+              Select Target Language
+            </option>
+            <option value="english">English</option>
+            <option value="spanish">Spanish</option>
+            <option value="chinese">Chinese</option>
+          </select>
+          <textarea
+            class="item2"
+            id="target-content"
+            placeholder="Translated text will be shown here!"
+          ></textarea>
+        </div>
+      </div>
+      <div class="center">
+        <button type="submit">Translate</button>
+      </div>
+    </form>
+  </body>
+</html>
